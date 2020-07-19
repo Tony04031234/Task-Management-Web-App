@@ -1,0 +1,24 @@
+{
+  "name": "website",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "express-session": "^1.17.1",
+    "google-auth-library": "^6.0.2",
+    "googleapis": "^39.2.0",
+    "http-errors": "^1.7.3",
+    "mailtoui": "^1.0.3",
+    "morgan": "~1.9.1",
+    "mysql": "^2.18.1",
+    "sanitize-html": "^1.27.0",
+    "shortid": "^2.2.15",
+    "uuid": "^8.1.0"
+  }
+}

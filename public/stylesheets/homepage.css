@@ -1,0 +1,468 @@
+
+/* code that is here will apply to any screen size */
+
+/* Some Sass variables */
+ html{
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+ }
+
+ body {
+	 margin: 0;
+	 font-family: 'Roboto';
+	 font-size: 17px;
+	 line-height: 1.3em;
+	 height: 100%;
+	 width: 100%;
+     position:fixed;
+     top:0;
+     bottom:0;
+     left:0;
+     right:0;
+}
+ #ui {
+	 height: 100%;
+	 width: 100%;
+	 display: grid;
+	 grid-template-rows: 50px 50px 1fr; /* devide the screen 3 parts which height is 50 50 and 1 frame */
+	 color: #eee;
+	 overflow: hidden;
+}
+.navbar {
+     width: 100%;
+     height:100%;
+	 padding-left: 10px;
+	 display: flex;
+	 align-items: center;
+}
+.navbar.app {
+     width: 100%;
+     height:100%;
+	 background-color: #0067a3;
+	 font-size: 1.5rem;
+	 padding:10px;
+}
+.navbar.board {
+     width: 100%;
+     height:100%;
+	 font-size: 1.1rem;
+	 padding:10px;
+	 background-color: #4682B4;
+}
+
+
+.wrapper-list{
+    display:grid;
+    grid-column-gap: 20px;
+	grid-template-columns: auto auto auto auto auto auto auto auto auto;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    background-color: #87CEEB;    /*background-image: url("https://source.unsplash.com/weekly?water");*/
+}
+
+.inner-list{
+    border-radius: 5px;
+    background-image: url("https://source.unsplash.com/user/");
+    background-color: #151517;
+    width: 300px;
+    height: 600px;
+    margin: 20px;
+    padding: 10px;
+    overflow-y: scroll;
+
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.inner-list::-webkit-scrollbar {
+    display: none;
+}
+
+#taskCard{
+    border: 1px solid #483D8B;
+    border-radius: 15px;
+    margin: 10px;
+    text-align: center;
+    background-color: #DCDCDC;
+}
+
+header{
+	 line-height: 36px;
+	 font-size: 20px;
+	 font-weight: bold;
+	 border-top-left-radius: 5px;
+	 border-top-right-radius: 5px;
+	 color:#FF1493;
+}
+
+span{
+    color: blue;
+    font-weight:bold
+}
+
+a{
+	margin: 5px;
+}
+
+button{
+  background-color:#FFDAB9; /* Green */
+  border: none;
+  border-radius:8px;
+  color: black;
+  padding: 4px 4px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin-left: 20px;
+}
+
+.vl { /* draw the line between task management and button */
+  margin-left:20px;
+  border-left: 2px solid black;
+  height: 25px;
+}
+h4{/* adjust coloe h4 element */
+	padding:5px;
+	color: #98FB98;
+	font-size:25px;
+/*	border: 2px solid black; */
+}
+
+.btn {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: black;
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button {border-radius: 40px;}
+
+.btn-div{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+
+
+input[type="button"]{
+    background-color:#F5F5DC; /* Green */
+    text-align: left;
+    color: black;
+    border-radius:10px;
+    margin-left:20px;
+}
+
+textarea{
+    background-color:#F0F8FF;
+    color: black;
+    font-weight: bold;
+    border-radius:8px;
+}
+
+
+/* My profile card */
+.my-profile-wrapper{
+    display:grid;
+	grid-template-columns: 50% 50%;
+}
+
+
+#newBtn{
+    margin:20px 20px 40px 10px;
+    padding:10px;
+    background-color: #32a88b;
+    color:#2d3e57;
+    font-weight:bold;
+    border: 2px solid pink;
+    border-radius:4px;
+    width: 90%;
+    height:40px;
+
+}
+
+.profile-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  margin-left:20px;
+  margin-top: 40px;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+#profile-btn {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 90%;
+  font-size: 18px;
+  margin-left:10px;
+}
+
+#P{
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+.profile-table{
+    border: 2px solid black;
+    display:grid;
+    grid-column-gap: 5px;
+	grid-template-columns: 30% 70%;
+	height:600px;
+	margin-top:20px;
+    margin-left:20px;
+	background-color: #A9A9A9;
+	border-radius:5px;
+}
+#left{
+    margin:10px;
+    padding:10px;
+    border: 2px solid green;
+    background-color: ghostwhite;
+    text-align: center;
+    width: 80%;
+    height:90%;
+}
+
+#right{
+    margin:10px;
+    padding:10px;
+    border: 2px solid blue;
+    background-color: ghostwhite;
+    width: 90%;
+    height:90%;
+}
+input[target] {
+    background-color: ghostwhite;
+    width: 70%;
+    height: 40%;
+}
+
+/* Profile-info*/
+.profile-div-profile{
+     text-align:center;
+     margin:10px;
+     padding:10px;
+}
+
+.x{
+   width:50%;
+   height:60px;
+   margin:20px;
+   border: 1px solid black;
+   background-color:#75ad66 ;
+   color: black;
+   font-weight: bold;
+   border-radius:5px;
+   text-align:center;
+}
+
+#hr{
+    border:2px solid black;
+    width:95%;
+    margin-left:5px;
+    margin-top:10px;
+}
+.profile-card{
+    text-align: center;
+
+}
+.profile-inner-2{
+    text-align:center;
+}
+
+/* Date availability */
+
+.availability{
+    display:grid;
+    grid-template-rows: auto auto;
+}
+
+.calendar-table{
+    display:grid;
+    grid-column-gap: 5px;
+	grid-template-columns: 45% 55%;
+}
+
+#table1{
+    width: 100%;
+    margin-left: 25px;
+}
+
+#updateDate{
+    border: 3px solid green;
+    height: auto;
+    width: 450px;
+    background-color:#DCDCDC;
+    right:30px;
+}
+
+#dateCard{
+    border: 2px solid black;
+    margin: 20px;
+    text-align: center;
+    overflow-y: auto;
+    overflow-x: visible;
+    background-color:#DCDCDC;
+}
+
+.myname{
+    color: #6b03fc;
+    text-align: center;
+    font-weight: bold;
+}
+.mydate{
+    color: black;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+}
+/*#dateBtn{
+
+}
+*/
+
+/*  Manage Member */
+.manage{
+    margin-left: 30px;
+}
+
+
+
+
+/* Preferred Task Here */
+
+.prefer{
+    margin-left: 20px;
+    padding: 20px;
+}
+
+.prefer2{
+    margin-left: 20px;
+    padding: 20px;
+    height:700px;
+    overflow:auto;
+}
+
+h3{
+    color:green;
+    font-weight: bold;
+}
+#comment{
+    color: black;
+    font-style: italic;
+    font-weight:bold;
+}
+
+hr{
+    border:2px solid black;
+    width:600px;
+    margin-left:5px;
+    margin-top:10px;
+}
+
+
+/* button calendar */
+
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  left: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text] {
+  width:90%;
+  padding: 15px;
+  margin: 0px;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+b{
+    color: black;
+}
+h1{
+    color:blue;
+}
+
+#setdate{
+    width:290px;
+    height:30px;
+}
+

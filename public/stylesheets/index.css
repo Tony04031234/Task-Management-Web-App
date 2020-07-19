@@ -1,0 +1,99 @@
+
+body{
+	 margin: 0;
+	 font-family: 'Roboto';
+	 font-size: 17px;
+	 line-height: 1.3em;
+}
+
+#ui{
+     height: 100%;
+	 width: 100%;
+	 display: grid;
+	 grid-template-rows: 70px 900px 900px 900px 90px ; /* devide the screen 3 parts which height is 50 50 and 1 frame */
+	 color:black;
+}
+
+header{
+    color:black;
+    background-color:#455d6e;
+}
+
+.about{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    background-color:#E3F1F1;
+}
+
+.admin{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    background-color:ghostwhite;
+}
+
+.user{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    background-color:#E3F1F1;
+}
+
+footer{
+    background-color: #7291a7;
+    color: black;
+    font-weight: bold;
+    left: 20px;
+    text-align: center;
+}
+
+a{
+    margin: 30px;
+    color: #ffa366;
+}
+
+p{
+    color:#005580;
+    font-size:20px;
+    margin-top:20px;
+}
+
+#footer{
+    position: initial;
+    margin-top: 30px;
+}
+
+button{
+    background-color:#ccccb3;
+    border-radius:10px;
+    position: fixed;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+h1{
+    color: green;
+    font: Arial sans-serif;
+    font-weight:bold;
+    font-size: 70px;
+}
+
+.column{
+
+    margin-top: 80px;
+}
+
+span{
+    text-align: center;
+}
+
+
+
+
+
+/*display: grid;
+grid-column-gap: 5px;
+grid-template-columns:700px 1fr;
+
+*/
