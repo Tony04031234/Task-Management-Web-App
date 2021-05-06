@@ -17,7 +17,7 @@
     "mailtoui": "^1.0.3",
     "morgan": "~1.9.1",
     "mysql": "^2.18.1",
-    "sanitize-html": "^1.27.0",
+    "sanitize-html": "^2.3.2",
     "shortid": "^2.2.15",
     "uuid": "^8.1.0"
   }
