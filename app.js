@@ -4,20 +4,27 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var session = require('express-session');
-//var cors = require('cors');
-
+var cors = require('cors');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-
+// create a 'pool' (group) of connections to be used for connecting with our SQL server
+// var dbConnectionPool = mysql.createPool({
+//       host: 'localhost',
+//       database: 'website'
+// });
 // use mysql in this app
 var mysql = require('mysql');
 
-// create a 'pool' (group) of connections to be used for connecting with our SQL server
-var dbConnectionPool = mysql.createPool({
-      host: 'localhost',
-      database: 'website'
-
+var dbConnectionPool = mysql.createConnection({
+  host: "localhost",
+  user: "root",
+  password: "tuan0403"
+});
+// check the database connection
+dbConnectionPool.connect(function(err) {
+  if (err) throw err;
+  console.log("Connected!");
 });
 
 var app = express();
@@ -45,21 +52,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
-
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
 });
 
 module.exports = app;
-
-
-/*
-
-app.use(session({
-    secret: 'tony',
-    resave: false,
-    saveUninitialized: true,
-    cookie: { httpOnly: false }
-}));
-*/

@@ -14,10 +14,7 @@
          <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, viewport-fit=cover">
         <script src="https://apis.google.com/js/platform.js" async defer></script>
         <meta name="google-signin-client_id" content="1054842039570-f4qei6cjtp377m32ulmjo0jucpu0qa3l.apps.googleusercontent.com">
-        <!--<script src="/wdc/website/node_modules/mailtoui/dist/mailtoui-min.js" defer></script>-->
         <script defer src="javascripts/home.js"></script>
-
-
     </head>
     <body >
         <div id="ui">
@@ -171,35 +168,6 @@
                     <div id="taskCard"></div>
                 </div>
             </main>
-
-            <!--<main style="background-color:#ADD8E6" v-if="view == 'assign_task'">
-
-                <div class="manage">
-                    <button v-on:click="view = '1';">Back</button><br />
-                </div>
-
-                <div style="float:left; margin:10px;"class="btn-div" id="btn-add">
-                    <button class="btn button"  v-on:click="addTask();">Add</button>
-                	<textarea v-model="pTitle" id="post-title" rows="5" cols="30" placeholder="Title"></textarea>
-                    <textarea v-model="pContent" id="post-title" rows="5" cols="30" placeholder="Content"></textarea>
-                </div>
-
-                <select>
-                    <option ></option>
-                </select>
-
-                <div class="popup-form">
-                    <button class="open-button" onclick="openForm2()">Set Due Date</button>
-                    <div class="form-popup" id="myForm">
-                        <div class="form-container">
-                            <h1>Due Date</h1>
-                            <label for="date"><b>Set Due Date</b></label>
-                            <input type="date" id="setdate" v-model="pDueDate"  name="date" >
-                            <button type="button" class="btn cancel" onclick="closeForm2()">Close</button>
-                        </div>
-                     </div>
-                </div>
-            </main> -->
 
             <main style="background-color:#ADD8E6"  v-if="view == 'set_task_preference'" >
 
@@ -421,46 +389,3 @@
 
     </body>
 </html>
-
-<!--
-
-v-on:click="removePreferredTask(index);"
-<main  style="background-color:#ADD8E6" v-if="view == 'manage_member'">
-
-                <div class="manage">
-                    <button v-on:click="view = 'board';">Back</button><br />
-                </div>
-
-                <div class="manage">
-                    <div id="manage_member" v-for=" (manage, index) in Profile_manager" >
-                        <h3>Name: {{ manage.firstN}} {{manage.lastN }}</h3>
-                        <p id="comment">Age: {{manage.myAge }}</p>
-                        <p id="comment">School: {{manage.uni}}</p>
-                        <p id="comment">Job: {{manage.job}}</p>
-                        <p id="comment">Gmail: {{manage.gmail }}</p>
-                        <p id="comment">ContactNo: {{manage.contact  }}</p>
-                        <span class="date">Date Created: {{manage.date}}</span>
-                        <span id="dateBtn"><input type="button" id="index" value="delete" v-on:click="remove_member_profile(index);"></input></span>
-                        <hr />
-                    </div>
-
-                </div>
-
-            </main>
-
-
-
-
-<div id="profile-div-account" v-if="see== 'profile-account'">
-                                <div class="x" id="user">
-                                    <p>Username</p>
-                                    <input type="text" id="F"  placeholder="Enter username ">
-                                </div>
-
-                                <div class="x" id="pass">
-                                    <p>Password</p>
-                                    <input type="text" id="G" placeholder="Enter password ">
-                                </div>
-
-                            </div>
- -->

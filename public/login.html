@@ -1,28 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-      <!-- Required meta tags -->
       <meta charset="utf-8" />
       <link rel="shortcut icon" href="favicon.ico">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes" />
-      <!--<meta http-equiv="content-type" content="text/html; charset=UTF-8" /> -->
       <link rel="stylesheet" type="text/css" href="stylesheets/login.css">
       <script src="https://apis.google.com/js/platform.js?onload=onLoad" async defer></script> <!-- google sign in here -->
       <meta name="google-signin-client_id" content="1054842039570-f4qei6cjtp377m32ulmjo0jucpu0qa3l.apps.googleusercontent.com">
       <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
       <script defer src="javascripts/home.js"></script>
       <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v7.0" nonce="xrxxdCCR"></script>
-
   </head>
-
   <body >
-
     <div class="login-wrap" id="ui">
     	<div class="login-html">
     		<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
     		<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
     		<div class="login-form">
-
     		  <!-- sign in form -->
     			<div class="sign-in-htm">
 
@@ -48,16 +42,12 @@
     				<div style="width:70px;background-color:;"class="fb-login-button" data-size="large" data-button-type="continue_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false" data-width="">
             </div>
             <div id="fb-root"></div>
-
             <div id="google" >
           			<div id ="google-signin-button" class="g-signin2" data-onsuccess="onSignIn" style="width:120px; margin-left: 20px;"></div>
           			<a href="#" v-on:click="signOut();">Sign out</a>
           			<div class="hr"></div>
             </div>
-
-
             <!-- facebook login -->
-
     		  </div>
     			<!-- sign up form here -->
     			<div class="sign-up-htm">
@@ -65,26 +55,21 @@
     					<label for="user" class="label">Username</label>
     					<input id="user" type="text" class="input"  v-model="user">
     				</div>
-
     				<div class="group">
     					<label for="pass" class="label">Password</label>
     					<input id="pass" type="password" class="input" data-type="password"  v-model="pass">
     				</div>
-
     				<div class="group">
     					<label for="pass" class="label">Repeat Password</label>
     					<input id="pass" type="password" class="input" data-type="password">
     				</div>
-
     				<div class="group">
     					<label for="pass" class="label">Email Address</label>
     					<input id="pass" type="text" class="input"  v-model="email">
     				</div>
-
     				<div class="group">
     					<input type="submit" class="button" value="Sign Up" v-on:click="signup">
     				</div>
-
     				<div class="hr"></div>
     				<div class="foot-lnk">
     					<label for="tab-1">Already Member?</a>
@@ -94,7 +79,6 @@
     		</div>
     	</div>
     </div>
-
      <script>
         function onLoad() {
           gapi.load('auth2', function() {
@@ -104,4 +88,3 @@
       </script>
   </body>
 </html>
-<!--onclick="location.href='homepage.html';" -->
